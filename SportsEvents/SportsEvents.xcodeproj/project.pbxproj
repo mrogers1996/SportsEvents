@@ -13,6 +13,14 @@
 		9DBD321E2076912B007EDAED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DBD321C2076912B007EDAED /* LaunchScreen.storyboard */; };
 		9DBD32292076912B007EDAED /* SportsEventsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBD32282076912B007EDAED /* SportsEventsTests.swift */; };
 		9DBD32342076912C007EDAED /* SportsEventsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBD32332076912C007EDAED /* SportsEventsUITests.swift */; };
+		9DBD32432076954A007EDAED /* sports_events.json in Resources */ = {isa = PBXBuildFile; fileRef = 9DBD32422076954A007EDAED /* sports_events.json */; };
+		9DBD32452076998A007EDAED /* Sports.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBD32442076998A007EDAED /* Sports.swift */; };
+		9DBD324720769AAB007EDAED /* SportEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBD324620769AAB007EDAED /* SportEvent.swift */; };
+		9DBD32492076A13E007EDAED /* SportsEventsJSPONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBD32482076A13E007EDAED /* SportsEventsJSPONParser.swift */; };
+		9DBD324B2076DFF4007EDAED /* SportEventsJSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBD324A2076DFF4007EDAED /* SportEventsJSONLoader.swift */; };
+		9DBD324D2076E341007EDAED /* SportsEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBD324C2076E341007EDAED /* SportsEventViewController.swift */; };
+		9DBD324F2076E37F007EDAED /* SportsEventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBD324E2076E37F007EDAED /* SportsEventDetailViewController.swift */; };
+		9DBD32512076E933007EDAED /* SportsEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBD32502076E933007EDAED /* SportsEventTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +53,14 @@
 		9DBD322F2076912C007EDAED /* SportsEventsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SportsEventsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DBD32332076912C007EDAED /* SportsEventsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsEventsUITests.swift; sourceTree = "<group>"; };
 		9DBD32352076912C007EDAED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DBD32422076954A007EDAED /* sports_events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sports_events.json; sourceTree = "<group>"; };
+		9DBD32442076998A007EDAED /* Sports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sports.swift; sourceTree = "<group>"; };
+		9DBD324620769AAB007EDAED /* SportEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportEvent.swift; sourceTree = "<group>"; };
+		9DBD32482076A13E007EDAED /* SportsEventsJSPONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsEventsJSPONParser.swift; sourceTree = "<group>"; };
+		9DBD324A2076DFF4007EDAED /* SportEventsJSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportEventsJSONLoader.swift; sourceTree = "<group>"; };
+		9DBD324C2076E341007EDAED /* SportsEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsEventViewController.swift; sourceTree = "<group>"; };
+		9DBD324E2076E37F007EDAED /* SportsEventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsEventDetailViewController.swift; sourceTree = "<group>"; };
+		9DBD32502076E933007EDAED /* SportsEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsEventTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +111,15 @@
 		9DBD32122076912B007EDAED /* SportsEvents */ = {
 			isa = PBXGroup;
 			children = (
+				9DBD3241207694CA007EDAED /* Model */,
 				9DBD32132076912B007EDAED /* AppDelegate.swift */,
 				9DBD32172076912B007EDAED /* Main.storyboard */,
 				9DBD321A2076912B007EDAED /* Assets.xcassets */,
 				9DBD321C2076912B007EDAED /* LaunchScreen.storyboard */,
 				9DBD321F2076912B007EDAED /* Info.plist */,
+				9DBD324C2076E341007EDAED /* SportsEventViewController.swift */,
+				9DBD324E2076E37F007EDAED /* SportsEventDetailViewController.swift */,
+				9DBD32502076E933007EDAED /* SportsEventTableViewCell.swift */,
 			);
 			path = SportsEvents;
 			sourceTree = "<group>";
@@ -120,6 +140,18 @@
 				9DBD32352076912C007EDAED /* Info.plist */,
 			);
 			path = SportsEventsUITests;
+			sourceTree = "<group>";
+		};
+		9DBD3241207694CA007EDAED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9DBD32422076954A007EDAED /* sports_events.json */,
+				9DBD32442076998A007EDAED /* Sports.swift */,
+				9DBD324620769AAB007EDAED /* SportEvent.swift */,
+				9DBD32482076A13E007EDAED /* SportsEventsJSPONParser.swift */,
+				9DBD324A2076DFF4007EDAED /* SportEventsJSONLoader.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DBD321E2076912B007EDAED /* LaunchScreen.storyboard in Resources */,
+				9DBD32432076954A007EDAED /* sports_events.json in Resources */,
 				9DBD321B2076912B007EDAED /* Assets.xcassets in Resources */,
 				9DBD32192076912B007EDAED /* Main.storyboard in Resources */,
 			);
@@ -256,7 +289,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DBD324F2076E37F007EDAED /* SportsEventDetailViewController.swift in Sources */,
+				9DBD32512076E933007EDAED /* SportsEventTableViewCell.swift in Sources */,
+				9DBD32452076998A007EDAED /* Sports.swift in Sources */,
+				9DBD324B2076DFF4007EDAED /* SportEventsJSONLoader.swift in Sources */,
+				9DBD324D2076E341007EDAED /* SportsEventViewController.swift in Sources */,
+				9DBD324720769AAB007EDAED /* SportEvent.swift in Sources */,
 				9DBD32142076912B007EDAED /* AppDelegate.swift in Sources */,
+				9DBD32492076A13E007EDAED /* SportsEventsJSPONParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
